@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pgdb-1
+  description: Instance of a CloudSQL provided PostgreSQL database
+spec:
+  type: db
+  lifecycle: dev
+  owner: uki-tanzu-se-org
+  system: dev-db
+  dependsOn:
+    - resource:default/cloudsql
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: psql-1
+  description: Instance of a Bitnami provided PostgreSQL database
+spec:
+  type: db
+  lifecycle: dev
+  owner: uki-tanzu-se-org
+  system: dev-db
+  dependsOn:
+    - resource:default/postgres
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: db-pgsql-bitnami
+  description: Instance of a Bitnami provided PostgreSQL database
+spec:
+  type: db
+  lifecycle: dev
+  owner: uki-tanzu-se-org
+  system: dev-db
+  dependsOn:
+    - resource:default/postgres

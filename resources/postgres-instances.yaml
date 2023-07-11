@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: postgres
+  description: Bitnami provided PostgreSQL
+spec:
+  type: db
+  owner: infra-ops

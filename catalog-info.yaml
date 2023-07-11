@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: tap-gui-catalog-info
+  description: 'uki-tanzu-se TAP catalog'
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  targets:
+    - ./components/tap-gui.yaml
+    - ./groups/uki-tanzu-se-org.yaml
+    - ./groups/default-team.yaml
+    - ./systems/tap-gui-system.yaml
+    - ./domains/tap-gui-domain.yaml
+    - ./domains/hello-domain.yaml
+    - ./systems/hello-system.yaml
+    - ./systems/public-cloud.yaml
+    - ./systems/db-system.yaml
+    - ./resources/cloud-providers.yaml
+    - ./resources/cloudsql-instances.yaml
+    - ./resources/postgres-instances.yaml
+    - ./components/db-components.yaml

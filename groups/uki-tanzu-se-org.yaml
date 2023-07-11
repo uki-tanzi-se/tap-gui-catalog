@@ -1,0 +1,79 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: uki-tanzu-se-org
+  description: The UKI Tanzu SEs
+  links:
+    - url: https://github.com/uki-tanzu-se
+      title: UKI Tanzu SE GitHub
+    - url: https://tanzu.vmware.com/support
+      title: Tanzu Support Website
+spec:
+  type: organization
+  profile:
+    displayName: UKI Tanzu SEs
+    email: demo@tap.tanzu.xyz
+    picture: https://raw.githubusercontent.com/uki-tanzu-se/tap-gui-catalog/main/img/org-logo%400.5x.png
+  parent: tanzu-se-org
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: billglover
+spec:
+  profile:
+    displayName: Bill Glover
+    email: bglover@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-W014FT4AQ3S-7b2a75fc74b4-512
+  memberOf: [uki-tanzu-se-org, team1, team2]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: chburgess
+spec:
+  profile:
+    displayName: Chris Burgess
+    email: chburgess@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-W011BREHK7T-0cbf2433b3ea-512
+  memberOf: [uki-tanzu-se-org]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: vparmar
+spec:
+  profile:
+    displayName: Vikesh Parmer
+    email: vparmar@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-U02TAK467B4-d6425fb674f4-512
+  memberOf: [uki-tanzu-se-org]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: natarajmb
+spec:
+  profile:
+    displayName: Nataraj Basappa
+    email: natarajmb@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-U03EC37MP99-fbc4d1fa1288-512
+  memberOf: [uki-tanzu-se-org]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jkwong
+spec:
+  profile:
+    displayName: Joe Kwong
+    email: jkwong@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-U03LYFKK80Y-bd2923a6d563-512
+  memberOf: [uki-tanzu-se-org]
+

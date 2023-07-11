@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gcp
+  description: Google Cloud Platform
+spec:
+  type: infra
+  owner: infra-ops
+  system: public-cloud
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: aws
+  description: Amazon Web Services
+spec:
+  type: infra
+  owner: infra-ops
+  system: public-cloud
