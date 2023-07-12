@@ -77,3 +77,26 @@ spec:
     picture: https://ca.slack-edge.com/E8YCM8N9L-U03LYFKK80Y-bd2923a6d563-512
   memberOf: [uki-tanzu-se-org]
 
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: zalam
+spec:
+  profile:
+    displayName: Zahoor Alam
+    email: zalam@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-WC3Q8NSD9-840e3e6cea4e-512
+  memberOf: [uki-tanzu-se-org]
+
+  ---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: oedmund
+spec:
+  profile:
+    displayName: Edmund Oni
+    email: oedmund@tanzu.xyz
+    picture: https://ca.slack-edge.com/E8YCM8N9L-U049C908WE6-0ecfc0525395-512
+  memberOf: [uki-tanzu-se-org]
